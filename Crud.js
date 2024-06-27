@@ -4,10 +4,10 @@
         apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
         authDomain: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
         databaseURL: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-        //projectId: "formulario2-b6be5",
+        //projectId: "",
         storageBucket: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-        //messagingSenderId: "522161596122",
-        //appId: "1:522161596122:web:53c8708930831788c027e3"
+        //messagingSenderId: "",
+        //appId: ""
     };
 
     // Initialize Firebase
