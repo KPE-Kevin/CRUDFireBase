@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/Logo.png">
+    <link rel="stylesheet" href="css/main/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Proyecto Integrador</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-secondary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/Logo.png" alt="Smart Identifier" width="100">
+                    Smart Identifier SID
+                </a>
+
+                <button class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="templates/Organizacion.html">Organización</a>
+                        </li>
+
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="templates/Proyecto">Proyecto</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="contenedor">
+        <aside class="contenedor-menu">
+            
+            <div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <h2 class="text-center active">Menu</h2>
+                    </li>
+                    <li class="list-group-item ">
+                        <a class="link-offset-2 link-underline link-underline-opacity-0" href="#Descripcion">
+                            Descripcion
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="link-offset-2 link-underline link-underline-opacity-0" href="#Objetivos">
+                            Objetivos
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="link-offset-2 link-underline link-underline-opacity-0" href="#Justificacion">
+                            Justificacion
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <Section id="Principal">
+            <h1></h1>
+            <Section id="Descripcion">
+                <h2>Descripcion</h2>
+                <p class="text-justify">
+                    "Smart Identifier" es una solución de control de acceso avanzada que utiliza tecnología de última 
+                    generación para garantizar la agilización de procesos y el control de acceso a las instalaciones 
+                    educativas que lo soliciten. El sistema utiliza un software de reconocimiento por medio de NFC y 
+                    de RFID para autenticar la identidad de las personas que acceden a la escuela. Además, el sistema 
+                    cuenta con características avanzadas de monitoreo y seguimiento de la asistencia de los estudiantes, 
+                    y puede integrarse con otros sistemas de registro, como cámaras o inclusive lector de huellas dactilares
+                </p>
+            </Section>
+
+            <section id="Objetivos">
+                <h2>Objetivos</h2>
+                <h3>Objetivo general:</h3>
+                <p class="text-justify">
+                    Diseñar un prototipo para automatizar el acceso de alumnos en las aulas de ITSOEH, utilizando tarjetas 
+                    NFC con tecnologias Wifi, ESP32-CAM, LoRaWAN, node-red y MQTT.
+                </p>
+                <h3>Objetivos especificos:</h3>
+                <p class="text-justify">
+                    <ul>
+                        <li>Analizar las configuraciones y las formas de comunicación del sensor PN532.</li>
+                        <li>Desarrollar un programa en la plataforma de Arduino para la lectura del sensor y envío de datos por puerto serial.</li>
+                        <li>Establecer comunicación entre el lenguaje de programación C# y el puerto serial.</li>
+                        <li>Diseñar y desarrollar una base de datos acorde a las necesidades de este.</li>
+                        <li>Realizar y establecer conexión con la base de datos.</li>
+                        <li>Desarrollar e implementar la lógica del sistema.</li>
+                        <li>Diseño y desarrollo de interfaces de sistema.</li>
+                        <li>Desarrollar un programa en la plataforma de Arduino para la lógica de la ESP32-CAM.</li>
+                        <li>Diseñar y configurar las herramientas de Node-RED.</li>
+                        <li>Montar y configurar un Broker de MQTT y los dispositivos que serán clientes y publicadores.</li>
+                        <li>Desarrollar un programa en la plataforma de Arduino para la lógica de la ESP32 con LoRaWAN.</li>
+                        <li>Evaluar temas y datos enviados por MQTT.</li>
+                    </ul>
+                </p>
+            </section>
+
+            <section id="Justificacion">
+                <h2>Justificacion</h2>
+                <p class="text-justify">Con base al planteamiento del problema se propone el desarrollo de un prototipo de un dispositivo que pueda leer datos escritos en tarjetas o tecnologías NFC por medio de un sensor PN532 el cual enviará el dato con ayuda de Arduino, a través de la comunicación serial, recibida por un Raspberry pi 3 B. Por medio de una interfaz gráfica desarrollada en el lenguaje de programación c# se leerá los datos de la tarjeta NFC obtenidos de la comunicación serial; mismo que podrán manipularse por medio de una base de datos implementada en un servidor, estos datos serán los datos del estudiante foto, nombre, matricula y materia.</p>
+                <p class="text-justify">Este prototipo dará solución al proceso de registro de asistencias en cual es repetitivo, con lleva un tiempo, usualmente no hay un sistema óptimo para realizarlo el cual los profesores pueda ocupar, así mismo en ciertas ocasiones con el sistema actual que llevan los profesores para realizar esta tarea suele tener problemas como que no se realice el registro, desorganización por la cantidad de salones a los que les dan clases o la perdida de información.</p>
+                <p class="text-justify">Para evitar que estas situaciones sucedan, el prototipo conforme a las características que tiene podrá dar solución a este tipo de situaciones al tener el registro en una base de datos local dentro de a institución. Y al mismo tiempo permitirá que la información se fácilmente consultada por los usuarios que requieran la información como pueden ser profesores, jefes de tutorados o el jefe de carrera.</p>
+            </section>
+        </Section>
+    </main>
+
+    <footer>
+        <h3>Derechos reservados - SID</h3>
+    </footer>
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

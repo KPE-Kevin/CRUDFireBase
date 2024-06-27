@@ -1,0 +1,20 @@
+.text-justify{
+    text-align: justify;
+}
+
+.text-center{
+    text-align: center;
+}
+
+#Principal{
+    width: 65%;
+    margin: 2% 5% 0 5%;
+}
+
+.contenedor{
+    display: flex;
+}
+.contenedor-menu{
+    width: 15%;
+    margin: 2% 5% 0 5%;
+}

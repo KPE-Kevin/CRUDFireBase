@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../img/Logo.png" />
+    <link rel="stylesheet" href="../css/main/styles.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <title>Proyecto Integrador</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-secondary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../img/Logo.png" alt="Smart Identifier" width="100" />
+            Smart Identifier SID
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Organización</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="contenedor">
+      <aside class="contenedor-menu">
+        <div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <h2 class="text-center active">Menu</h2>
+            </li>
+            <li class="list-group-item">
+              <a
+                class="link-offset-2 link-underline link-underline-opacity-0"
+                href="#Descripcion"
+              >
+                Descripcion
+              </a>
+            </li>
+            <li class="list-group-item">
+              <a
+                class="link-offset-2 link-underline link-underline-opacity-0"
+                href="#Objetivos"
+              >
+                Objetivos
+              </a>
+            </li>
+            <li class="list-group-item">
+              <a
+                class="link-offset-2 link-underline link-underline-opacity-0"
+                href="#Justificacion"
+              >
+                Justificacion
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <section id="Principal">
+        <h1 class="text-center">Organización del proyecto</h1>
+        <section id="AsiganaciónTareas">
+          <h2 class="text-center">Agregar | Modificar | Eliminar</h2>
+
+          <label for="nombreT" class="form-label">Tarea: </label>
+          <input class="form-control"" type="text" name="Tarea" id="nombreT">
+
+          <label for="estatus" class="form-label">Estado de la tarea: </label>
+          <select id="estado-tarea" class="btn btn-secondary">
+            <option value="Pendiente">Pendiente</option>
+            <option value="Iniciada">Iniciada</option>
+            <option value="Pausada">Pausada</option>
+            <option value="Finalizada">Finalizada</option>
+          </select>
+
+          <br />
+
+          <div class="fila">
+            <div class="descCuadro">
+              <label for="descripcion" class="form-label">Descripción</label>
+              <br />
+              <textarea id="descripcion" class="form-control"></textarea>
+            </div>
+
+            <div class="opcionRadio">
+              <label class="form-label">
+                <input type="radio" name="accion" value="Agregar" checked />
+                Agregar
+              </label>
+              <br />
+              <label class="form-label">
+                <input type="radio" name="accion" value="Modificar" />
+                Modificar
+              </label>
+              <br />
+              <label class="form-label">
+                <input type="radio" name="accion" value="Eliminar" />
+                Eliminar
+              </label>
+
+              <br />
+              <label for="idTarea">ID tarea: </label>
+              <input type="text" id="idTarea" class="form-control" />
+            </div>
+          </div>
+
+          <button class="btn btn-secondary" id="btnrealizar" type="submit">
+            Realizar
+          </button>
+        </section>
+
+        <section id="Tareas">
+          <h2>Lista de tareas</h2>
+
+          <div class="asignacion">
+            <p id="tareas"></p>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <h3>Derechos reservados - SID</h3>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+    <script src="../Crud.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
